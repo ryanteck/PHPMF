@@ -1,4 +1,6 @@
-ForumSoftware
+PHP Mongo Forums
+=============
+By Ryanteck / Ryan Walmsley
 =============
 
-Forum Software I wish to make
+In Development
