@@ -17,30 +17,9 @@
     along with this program.  If not, see {http://www.gnu.org/licenses/}.
     You can contact the creator by email on Ryanteck+phpmf@gmail.com
 */
+include('inc/header.php');
 ?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>RTK Forum</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<style>
 
-	</style>
-  </head>
-  <body>
-  <div class="navbar navbar-static-top">
-  <div class="container">
-  <a class="navbar-brand" href="#">RTK Forum</a>
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="index.php">Home</a></li>
-    <li><a href="#">Login</a></li>
-    <li><a href="#">Register</a></li>
-	<li><a href="#">Search</a></li>
-	</ul>
-	</div>
-	</div>
 	<div class="container">
 		<?php
 $posttitle = htmlspecialchars ($_GET['t']);
@@ -74,26 +53,9 @@ echo '
 	</div>
 	</div><br/>';
 	}
+
+include('inc/footer.php');
 ?>
 	
 	
-	
-	<!-- footer -->
-	<div class="row">
-	
-	<div class="col-lg-12">
-	<hr>
-	<h5>RTK Forum's V0.01A, (C) Ryanteck 2013</h5>
-	</div>
-	</div>
-	
 
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Optionally enable responsive features in IE8 -->
-    <script src="bootstrap/js/respond.js"></script>
-  </body>
-</html>
