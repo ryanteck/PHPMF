@@ -24,7 +24,8 @@
 	
 	<div class="col-lg-12">
 	<hr>
-	<h5>PHPMF V0.01A, (C) Ryanteck 2013</h5>
+	<h5>Powered by PHPMF V0.01, (C) Ryanteck 2013</h5>
+	<h5>Theme: Bootstrap Standard</h5>
 	</div>
 	</div>
 	
