@@ -29,6 +29,10 @@ $db = $m->selectDB("forum");
 $posts = $db->threads;
 $thread = $posts->findOne(array("title"=>$posttitle));
 #var_dump($thread);
+if($thread == NULL) {
+echo "<h3>No thread found in database</h3>";
+die(include("inc/footer.php"));
+}
 $title = "[".$thread['tag']."] ".$thread['title'];
 $posts = $thread['posts'];
 
