@@ -10,3 +10,4 @@ PHPMF Planned Features
 * Gravatar, Twitter, Facebook, Google+ & Steam Profile Pictures
 * Tags / Prefixes for threads
 * Multiple ranks e.g Admin, Mod, Super Mod / Global Mod, VIP / Donator, User. Each may have their own *Badge*
+* PHPBB, SMF & MySQL Converters
