@@ -18,14 +18,15 @@
     You can contact the creator by email on Ryanteck+phpmf@gmail.com
 */
 include('inc/header.php');
+forumheader("View",0);
 ?>
 
 	<div class="container">
-		<?php
+	<?php
 $posttitle = htmlspecialchars ($_GET['t']);
 $m = new MongoClient(); // connect
 $db = $m->selectDB("forum");
-$posts = $db->posts;
+$posts = $db->threads;
 $thread = $posts->findOne(array("title"=>$posttitle));
 #var_dump($thread);
 $title = "[".$thread['tag']."] ".$thread['title'];
@@ -41,7 +42,7 @@ $posts = $thread['posts'];
 	</div>
 	
 
-<?
+<?php
 foreach ($posts as &$post) {
 echo '
 	<div class="row">
