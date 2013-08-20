@@ -35,7 +35,7 @@ $posts = $thread['posts'];
 	
     <div class="row">
 	<div class="col-lg-12">
-	<h3><?php echo $title;?> </h3>
+	<h4><?php echo $title;?> </h4>
 	<hr>
 	</div>
 	</div>
@@ -46,7 +46,7 @@ foreach ($posts as &$post) {
 echo '
 	<div class="row">
 	<div class="col-lg-2">
-	<h3>Author: '.$post['author'].'</h3>
+	<h4>Author: '.$post['author'].'</h4>
 	</div>
 	<div class="col-lg-10">
 	'.$post['body'].'
