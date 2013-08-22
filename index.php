@@ -29,26 +29,37 @@ forumHeader("Home",0);
 	<hr>
 	</div>
 	</div>
-	
-	<div class="row">
+<?php
+$m = new MongoClient(); // connect
+$db = $m->selectDB("forum");
+$catagorys = $db->catagorys->find();
+$catagorysarray = iterator_to_array($catagorys);
+foreach($catagorysarray as &$catagory) {
+echo '	<div class="row">
 	<div class="col-lg-12">
-	<h2>Forum Centeral</h2>
+	<h2>'.$catagory['_id'].'</h2>
 	</div>
 	</div>
+';
+foreach($catagory['forums'] as &$forum) {
+echo '
 	<div class="row">
 	<div class="col-lg-6">
-	<h3>General Chat</h3><h5>The place for chit chat</h5>
+	<h3>'.$catagory['name'].'</h3><h5>The place for chit chat</h5>
 	</div>
 	<div class="col-lg-3">
 	<h4><b>Last Post By:</b> Ryanteck</h4>
-	<h5>Lurum ipsum doler amet I can't remember the rest</h5>
+	<h5>Lurum ipsum doler amet </h5>
 	</div>
 	<div class="col-lg-3">
 	<h4>0 Threads</h4>
 	<h4>0 Posts</h4>
 	</div>	
 	</div>
-<?php
+';
+}
+}
+
 include('inc/footer.php');
 ?>
 	

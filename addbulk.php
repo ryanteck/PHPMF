@@ -25,11 +25,11 @@ $posts = $db->threads;
 
 //loop
 $i = 0;
-$target = 1;
+$target = 5;
 while($i < $target) {
-$posts->insert(array("author"=>$i,"catagory"=>1,"posts"=>array(array("author"=>$i,"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis gravida purus, sed euismod est semper ut. Cras ligula dolor, tincidunt a lectus ultrices, ultrices ultrices ante. Nullam sed nisl felis. Integer eleifend neque eu ipsum venenatis, id tempor odio hendrerit. Etiam vitae rhoncus ante. Nullam mi turpis, aliquam non blandit sit amet, rutrum nec augue. Ut aliquet nunc dolor, id imperdiet risus placerat et. Proin felis velit, vehicula porta scelerisque id, cursus ut metus. Fusce lobortis magna quis vestibulum sagittis. Proin egestas volutpat lectus, ac vestibulum risus dapibus eu.")), "subcatagory"=>0,"tag"=>"Test","title"=>"Testing ".$i,"views"=>0));
+$posts->insert(array("author"=>$i,"catagory"=>1,"posts"=>array(array("author"=>$i,"body"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis gravida purus, sed euismod est semper ut. Cras ligula dolor, tincidunt a lectus ultrices, ultrices ultrices ante. Nullam sed nisl felis. Integer eleifend neque eu ipsum venenatis, id tempor odio hendrerit. Etiam vitae rhoncus ante. Nullam mi turpis, aliquam non blandit sit amet, rutrum nec augue. Ut aliquet nunc dolor, id imperdiet risus placerat et. Proin felis velit, vehicula porta scelerisque id, cursus ut metus. Fusce lobortis magna quis vestibulum sagittis. Proin egestas volutpat lectus, ac vestibulum risus dapibus eu.",'timestamp'=>time())), "subcatagory"=>0,"tag"=>"Test","title"=>"Testing ".$i,"views"=>0));
 echo $i;
-
+sleep(1);
 
 $i++;
 }
